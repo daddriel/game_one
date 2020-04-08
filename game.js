@@ -3,9 +3,9 @@ var moveMachine = ["piedra", "papel", "tijera"];
 var machine;
 
 function game(player){
-    
+       
     machine = moveMachine[Math.round(Math.random()*2)];
-    if(player != "piedra" || player != "papel" || player != "tijera"){
+    if(player != "piedra" && player != "papel" && player != "tijera"){
         console.log("Jugada no valida 😡")
     }else if(player === machine){
         console.log("Empate 🙃")
@@ -20,6 +20,7 @@ function game(player){
         print(player, machine);
     }else
         console.log("Perdiste 💩");
+        print(player, machine);
 
 }
 
